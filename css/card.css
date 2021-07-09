@@ -1,0 +1,187 @@
+.card{
+  display: flex;
+  width: 97%;
+  height: 120px;
+  margin: auto;
+  margin-top: 9px;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+}
+.card .images{
+  background-color: blue;
+  width: 130px;
+  height: 110px;
+  margin: 3px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  padding: 3px;
+}
+.card .images img{
+  width: 130px;
+  height: 110px;
+}
+.card .text{
+  background-color: white;
+  height: auto;
+}
+.card .text button{
+  border: 0;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  width: max-content;
+  padding: 0.5em;
+  margin: 7px 10px;
+
+}
+
+@media (max-width: 600px){
+  .card{
+    display: block;
+    align-items: center;
+    width: 97%;
+    height: auto;
+    margin: auto;
+    margin-top: 9px;
+    background-color: white;
+    -webkit-box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+  }
+  .card .images{
+    background-color: blue;
+    width: 100%;
+    height: 110px;
+    margin: auto;
+    align-items: center;
+    margin: 3px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    padding: 3px;
+  }
+  .card .images img{
+    width: 130px;
+    height: 110px;
+  }
+  .card .text{
+    background-color: white;
+    height: 100%;
+  }
+  .card .text button{
+    border: 0;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: max-content;
+    padding: 0.5em;
+    margin: 7px 10px;
+  
+  }
+}
+
+/* bouton resesosyo isi*/
+.middle{
+  width: 100%;
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+.btn i{
+  line-height: 40px;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+
+/* pati kontact form**/
+
+
+
+@media (max-width: 750px){
+  .card{
+    display: block;
+    align-items: center;
+    width: 97%;
+    height: auto;
+    margin: auto;
+    margin-top: 9px;
+    background-color: white;
+    -webkit-box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
+  }
+  .card .images{
+    background-color: blue;
+    width: 100%;
+    height: 110px;
+    margin: auto;
+    align-items: center;
+    margin: 3px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    padding: 3px;
+  }
+  .card .images img{
+    width: 130px;
+    height: 110px;
+  }
+  .card .text{
+    background-color: white;
+    height: 100%;
+  }
+  .card .text button{
+    border: 0;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: max-content;
+    padding: 0.5em;
+    margin: 7px 10px;
+  
+  }
+}
+
+ 

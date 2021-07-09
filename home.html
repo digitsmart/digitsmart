@@ -7,43 +7,10 @@
     <title>Konsey sou bib la</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 <body>
-   <header style="display: none;">
-       <div class="logo">
-           <img src="images/logo.png">
-           <h1>Konsey ak pawol biblik</h1>
-       </div>
-       <div class="home-a">
-        <h1>Jwen bon jan atik ak konèy sou bib la</h1>
-        <h2>Rete konekte avec nous, swiv nous Pou ka kon tout sa ki di e jwen tout nouvo konsey nou yo</h2>
-        <p>
-            
-        </p>
-        </div>
-       <div class="home">
-           <div class="video">
-               <h1>Video du jour sur la bible</h1>
-            <video poster="images/pub connection.jpg" controls>
-                <source src="ma pub.mp4" type="video/mp4">
-              </video>
-           </div>
-           <div class="formulaire">
-                <h3 class="sub-title">
-                Ranpli ti fomilè saPou ka toujou rete konekte avèk nou
-                 Wap ka jwenn tou nouvo atik nou yo
-               </h3>
-               <script type="text/javascript">var submitted=false;</script>
-             <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){document.getElementById('form').display = 'none'}"></iframe>
-              <form id="form" class="email-form" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScmDK3omnH4rKRr3q_3uM6F3_n8gnqaswSl_CmsnB5BrkdIXA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
-                <input type="text" name="entry.803825410" placeholder="Non ou Konplè"><br>
-                <input type="NUMBER" name="entry.1898897000" placeholder="Nimewo telefon ou"><br>
-                <input type="email" name="entry.1171564292" placeholder="Mete email ou"><br>
-                <button type="submit" id="submit">Vin jwenn nou</button>
-              </form>
-           </div>
-       </div>
-   </header> 
    <div class="container">
      <div class="content">
        <main>
@@ -53,7 +20,7 @@
               <h1>Konsey ak pawol biblik</h1>
             </div>
             <div class="home-a">
-              <h1>Jwen bon jan atik ak konèy sou bib la</h1>
+              <h1>Jwen bon jan atik ak konsèy sou bib la</h1>
               <h2>Rete konekte avec nous, swiv nous Pou ka kon tout sa ki di e jwen tout nouvo konsey nou yo</h2>
             </div>
             <div class="vidform">
@@ -63,12 +30,64 @@
                    <source src="ma pub.mp4" type="video/mp4">
                  </video>
               </div>
+              
+              <!--formulaire d'inscription ici-->
               <div class="formulaire">
-                   <h3 class="sub-title">
-                   Ranpli ti fomilè saPou ka toujou rete konekte avèk nou
-                    Wap ka jwenn tou nouvo atik nou yo
-                  </h3>
-                  <script type="text/javascript">var submitted=false;</script>
+                  <div class="card">
+                    <div class="images">
+                      <img src="images/1.png">
+                    </div>
+                    <div class="text">
+                      <h3>Ki objektif kopabib</h3>
+                      <p>Nou gen yon sel objektif, se fe mesaj bondye an byen pase, nou la poun edew konprann, tout sa ki paret yon tijan nwa pou ou
+                        ,
+                      </p>
+                      <button>Vizite atiok nou yo</button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="images">
+                      <img src="images/person-png.png">
+                    </div>
+                    <div class="text">
+                      <h3>Resevwa konsey nou yo</h3>
+                      <p>Si ou ta renmen resevwa tout konsey ak atik nou yo otomatik, jis enskri, klike sou bouton ble ki anba pou ou ka ranpli fomile a
+                      </p>
+                      <a href="#contact"><button>Vizite atiok nou yo</button></a>
+                    </div>
+                  </div>
+                 <!--Mes reseau sociaux ici-->
+                 <div class="middle">
+                  <a class="btn" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a class="btn" href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a class="btn" href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a class="btn" href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+
+              
+          </div>
+         </section>
+         <section class="main">
+            <div class="contact" id="contact">
+              <div class="image">
+                <img src="images/bib.jpg">
+              </div>
+              <div class="formulaire">
+                <h1>Resevwa atik nou yo otamatik sou email ou ak whatsapp</h1>
+                <h3>Ranpli fomile a si tout fwa ou ta renmen jwenn konsey nou a tout nouvo atik ke nou lage sou sit 
+                  n'ap kontan edew zanmi mwen, pa ezite koute e abone ak Jezi Kris ou an.
+                </h3>
+                <script type="text/javascript">var submitted=false;</script>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){document.getElementById('form').display = 'none'}"></iframe>
                  <form id="form" class="email-form" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScmDK3omnH4rKRr3q_3uM6F3_n8gnqaswSl_CmsnB5BrkdIXA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
                    <input type="text" name="entry.803825410" placeholder="Non ou Konplè"><br>
@@ -77,13 +96,11 @@
                    <button type="submit" id="submit">Vin jwenn nou</button>
                  </form>
               </div>
-          </div>
-         </section>
-         <section class="main" style="display: none;">
-          <h1>viv de bib ou ak la fwa ou</h1>
+            </div>
          </section>
        </main>
      </div>
    </div>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>

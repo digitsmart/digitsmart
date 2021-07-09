@@ -11,9 +11,11 @@
  }
  .container{
      width: 100%;
+     overflow-y: hidden;
  }
  .content{
     width: 100%;
+    overflow-y: hidden;
 }
 
 .home{
@@ -42,13 +44,13 @@
     color: white;
 }
 .home h1{
-    font-size: 18px;
+    font-size: 28px;
     font-family: cursive;
     color: white;
     text-align: center;
 }
 .home h2{
-    font-size: 16px;
+    font-size: 22px;
     font-family: cursive;
     color: white;
     text-align: center;
@@ -72,6 +74,7 @@
     width: 100%;
 }
 .vidform .video h1{
+    font-size: 26;
     color: blue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -104,13 +107,65 @@
 }
 .main{
     width: 90%;
-    height: 360px;
+    height: 100%;
     border: black 2px solid;
     margin: auto;
 }
+.contact .image{
+    width: 100%;
+
+}
+.contact .formulaire h1{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contact .formulaire h3{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contact .image img{
+    width: 100%;
+}
+.main .contact{
+    width: 100%;
+    display: flex;
+}
+.contact .formulaire{
+    width: 100%;
+}
+.contact .formulaire form{
+    width: 90%;
+    margin-right: 30px;
+    margin: auto;
+}
+.contact .formulaire form input{
+    color: rgb(129, 118, 118);
+    background: white;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.contact .formulaire form button{
+    color: #fff;
+    background: blue;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
 @media (max-width: 600px){
     body{
         overflow: auto;
+    }
+    h1{
+        font-size: 18px;
     }
 
     .home{
@@ -141,6 +196,12 @@
         color: white;
         text-align: center;
     }
+    .home-a h1{
+        font-size: 22px;
+    }
+    .home-a h2{
+        font-size: 18px;
+    }
     .vidform{
         display: block;
         width: 99%;
@@ -152,6 +213,7 @@
         box-shadow: 0px 1px 10px 3px black;
     }
     .vidform .video h1{
+        font-size: 18px;
         background-color: gray;
         color: white;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -163,7 +225,7 @@
         overflow-y: hidden;
     }
     .formulaire input{
-        width: 90%;
+        width: 98%;
         padding: 5px;
         margin: 3px;
     
@@ -183,5 +245,56 @@
         border: black 2px solid;
         margin: auto;
     }
-   
+   .main{
+       width: 100%;
+       height: 100%;
+   }
+
+
+   .contact .formulaire h1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contact .formulaire h3{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contact .image img{
+    width: 100%;
+}
+.main .contact{
+    width: 100%;
+    display: block;
+}
+.contact .formulaire{
+    width: 100%;
+}
+.contact .formulaire form{
+    width: 90%;
+    margin-right: 30px;
+    margin: auto;
+}
+.contact .formulaire form input{
+    color: rgb(129, 118, 118);
+    background: white;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.contact .formulaire form button{
+    width: 100%;
+    color: #fff;
+    background: blue;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
 }
