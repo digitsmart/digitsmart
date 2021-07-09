@@ -1,0 +1,187 @@
+*{
+    box-sizing: box-sizing;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ body {
+    font-size: normal;
+    background-color: white;
+
+ }
+ .container{
+     width: 100%;
+ }
+ .content{
+    width: 100%;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    padding: 3px;
+    overflow-y: hidden;
+    background-image: url('images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .logo{
+    display: flex;
+    margin:0 auto 20px;
+    width: max-content;
+    border-bottom: 2px solid white;
+}
+.home .logo img{
+    width: 40px;
+    height: 40px;
+    
+}
+.home .logo h1{
+    font-size: 28px;
+    font-family: cursive;
+    color: white;
+}
+.home h1{
+    font-size: 18px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+}
+.home h2{
+    font-size: 16px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+}
+.vidform{
+    display: flex;
+    width: 80%;
+    height: max-content;
+    margin: auto;
+    margin-top: 40px;
+    overflow-y: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px 3px black;
+}
+.vidform .video{
+    width: 98%;
+    border: 2px solid blue;
+    margin: 0px 3px;
+}
+.vidform .video video{
+    width: 100%;
+}
+.vidform .video h1{
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.vidform .formulaire{
+    width: 98%;
+    border: 2px solid blue;
+    margin: 0px 3px;
+    overflow-y: hidden;
+}
+.vidform .formulaire form{
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+    overflow-y: hidden;
+}
+.formulaire input{
+    width: 95%;
+    padding: 5px;
+    margin: 3px;
+
+}
+.formulaire h3{
+    font-size: 16px;
+    text-align: center;
+}
+.formulaire button{
+    width: 96%;
+    margin: auto;
+    padding: 3px;
+}
+.main{
+    width: 90%;
+    height: 360px;
+    border: black 2px solid;
+    margin: auto;
+}
+@media (max-width: 600px){
+    body{
+        overflow: auto;
+    }
+
+    .home{
+        width: 97%;
+        height: 100%;
+        padding: 3px;
+        overflow-y: hidden;
+        background-image: url('images/back.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .home .logo{
+        display: block;
+        margin: auto;
+        width: 90%;
+        border-bottom: 2px solid white;
+        align-items: center;
+    }
+    .home .logo img{
+        width: 40px;
+        height: 40px;
+        display: none;
+        
+    }
+    .home .logo h1{
+        font-size: 20px;
+        font-family: cursive;
+        color: white;
+        text-align: center;
+    }
+    .vidform{
+        display: block;
+        width: 99%;
+        margin: 3px;
+        height: max-content;
+        margin: auto;
+        overflow-y: hidden;
+        background-color: white;
+        box-shadow: 0px 1px 10px 3px black;
+    }
+    .vidform .video h1{
+        background-color: gray;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .vidform .formulaire form{
+        width: 100%;
+        margin: auto;
+        padding: 0.2em;
+        overflow-y: hidden;
+    }
+    .formulaire input{
+        width: 90%;
+        padding: 5px;
+        margin: 3px;
+    
+    }
+    .formulaire button{
+        width: 96%;
+        margin: auto;
+        padding: 3px;
+    }
+    .formulaire h3{
+        font-size: 14px;
+        text-align: center;
+    }
+    .main{
+        width: 90%;
+        height: 360px;
+        border: black 2px solid;
+        margin: auto;
+    }
+   
+}
