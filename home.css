@@ -19,8 +19,9 @@
 }
 
 .home{
-    width: 100%;
+    width: 99%;
     height: 100vh;
+    margin: auto;
     padding: 3px;
     overflow-y: hidden;
     background-image: url('images/back.jpg');
@@ -31,7 +32,7 @@
     display: flex;
     margin:0 auto 20px;
     width: max-content;
-    border-bottom: 2px solid white;
+    border-bottom: lid black solid white;
 }
 .home .logo img{
     width: 40px;
@@ -60,15 +61,16 @@
     width: 80%;
     height: max-content;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10px;
     overflow-y: hidden;
-    background-color: white;
-    box-shadow: 0px 1px 10px 3px black;
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 0px 1px solid red 10px 3px black;
 }
 .vidform .video{
-    width: 98%;
-    border: 2px solid blue;
+    width: 95%;
     margin: 0px 3px;
+    background-color: white;
+    box-shadow: 0px 1px solid red 10px 3px black;
 }
 .vidform .video video{
     width: 100%;
@@ -78,20 +80,17 @@
     color: blue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.vidform .formulaire{
-    width: 98%;
-    border: 2px solid blue;
-    margin: 0px 3px;
-    overflow-y: hidden;
+.formulaire h2{
+    background-color: gray;
 }
-.vidform .formulaire form{
+.formulaire form{
     width: 90%;
     margin: auto;
     padding: 1em;
     overflow-y: hidden;
 }
 .formulaire input{
-    width: 95%;
+    width: 100%;
     padding: 5px;
     margin: 3px;
 
@@ -108,19 +107,18 @@
 .main{
     width: 90%;
     height: 100%;
-    border: black 2px solid;
     margin: auto;
 }
 .contact .image{
     width: 100%;
 
 }
-.contact .formulaire h1{
+.formulaire h1{
     font-size: 24px;
     text-align: center;
     margin-bottom: 5px;
 }
-.contact .formulaire h3{
+.formulaire h3{
     font-size: 18px;
     text-align: center;
     margin-bottom: 5px;
@@ -132,33 +130,75 @@
     width: 100%;
     display: flex;
 }
-.contact .formulaire{
-    width: 100%;
+.formulaire{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.formulaire .t{
+    width: 60%;
 }
 .contact .formulaire form{
     width: 90%;
     margin-right: 30px;
     margin: auto;
 }
-.contact .formulaire form input{
+.form form input{
     color: rgb(129, 118, 118);
     background: white;
-    padding-left: 0;
+    padding: 5px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 1px solid red;
     transition: all 0.3s ease;
+    width: 100%;
+    margin: 0.3em;
+    border: 0px;
+    border-bottom: 1px solid red;
 }
-.contact .formulaire form button{
+.form form button{
     color: #fff;
     background: blue;
-    padding-left: 0;
+    padding: 5px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 1px solid red;
     transition: all 0.3s ease;
+    width: 100%;
+    margin-left: 9px;
+    border: 0px;
+  }
+  .form{
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      margin:10px auto;
+      background-color: white;
+  }
+  .form .t{
+      width: 60%;
+      padding: 5PX;
+      color: black;
+      border-right: black 2px solid;
+  }
+  .form .t h1{
+      color: black;
+      font-size: 20px;
+  }
+  .form .t h3{
+      text-align: justify;
+  }
+  .form .t hr{
+      height: 10px;
+      color: blue;
+      border-bottom: 1px solid blue;
+  }
+  .form form{
+      padding: 1em;
+      width: 35%;
   }
 @media (max-width: 600px){
     body{
@@ -166,6 +206,22 @@
     }
     h1{
         font-size: 18px;
+    }
+
+    .form{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+    .form .t{
+        width: 100%;
+        border-right: solid 2px black;
+    }
+    .form form{
+        padding: 1em;
+        width: 100%;
     }
 
     .home{
@@ -181,7 +237,7 @@
         display: block;
         margin: auto;
         width: 90%;
-        border-bottom: 2px solid white;
+        border-bottom: lid black solid white;
         align-items: center;
     }
     .home .logo img{
@@ -210,7 +266,7 @@
         margin: auto;
         overflow-y: hidden;
         background-color: white;
-        box-shadow: 0px 1px 10px 3px black;
+        box-shadow: 0px 1px solid red 10px 3px black;
     }
     .vidform .video h1{
         font-size: 18px;
@@ -242,7 +298,7 @@
     .main{
         width: 90%;
         height: 360px;
-        border: black 2px solid;
+        border: black lid black solid;
         margin: auto;
     }
    .main{
@@ -283,7 +339,7 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 1px solid red;
     transition: all 0.3s ease;
 }
 .contact .formulaire form button{
@@ -294,7 +350,7 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 1px solid red;
     transition: all 0.3s ease;
   }
 }
